@@ -1,0 +1,455 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/*Google Fonts*/
+@font-face {
+    font-family: "Calligraffitti";
+    src: url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+}
+
+body {
+    color: black;
+    background: white;
+    text-align: center;
+    line-height: 1.5;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 6rem;
+    background: rgb(222, 255, 172);
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 2;
+}
+
+.container-header {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 {
+    font-family: "Calligraffitti";
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    margin: 0 40px;
+}
+
+.menu {
+    height: 6rem;
+}
+
+.menu nav {
+    height: 100%;
+}
+
+.menu nav ul {
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.menu nav ul li {
+    height: 100%;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu nav ul li a {
+    font-family: "OpenSans";
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+.menu nav ul li a:hover {
+    color: black;
+    transition: 0,5 ease-in 2s;
+    border-bottom: 1px solid black;
+}
+
+.container-inicio {
+    margin-top: 7rem;
+    width: 80%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-inner .carousel-item img {
+    height: 50rem;
+}
+
+h5 {
+    font-family: "Calligraffitti";
+    font-size: 3rem;
+    color:white;
+}
+
+h5 + p {
+    font-family: "OpenSans";
+    font-size: 1.5rem;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    height: 3rem;
+}
+
+footer hr {
+    margin-top: 1rem;
+    border: none;
+    height: 2px;
+    background: rgba(128, 128, 128, 0.24);
+}
+
+.container-footer {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon {
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon a {
+    font-size: 3rem;
+    color: gray;
+    margin: 0 20px;
+}
+
+.redes {
+    height: 3rem;
+}
+
+.redes ul {
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.redes ul li {
+    height: 100%;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes ul li a {
+    font-family: "OpenSans";
+    font-size: 1.5rem;
+    color: gray;
+    margin: 0 20px;
+}
+
+.redes ul li a:hover {
+    color: black;
+    transition: 0,5 ease-in 2s;
+}
+
+h2 {
+    font-family: "Calligraffitti";
+    font-size: 4rem;
+    color: black;
+    margin-top: 8rem;
+}
+
+h3 {
+    font-family: "Calligraffitti";
+    font-size: 3rem;
+    color: black;
+}
+
+p {
+    font-family: "OpenSans";
+    font-size: 1.5rem;
+    color:black;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container-catalogo {
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.producto {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    transition: all 0.25s;
+}
+
+.producto:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.link-blog {
+    font-family: "OpenSans";
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #3498db;
+}
+
+.container-blog {
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.blog {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    transition: all 0.25s;
+}
+
+.blog:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container-pedidos {
+    margin: 1rem;
+    width: 70%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    border: 1px solid rgb(199, 199, 199);
+    color: rgb(97, 97, 97);
+}
+
+.sub-titulo {
+    font-family: "OpenSans";
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: start;
+    padding: 1rem;
+}
+
+#recuadro {
+    font-family: "OpenSans";
+    font-size: 1.5rem;
+    outline: none;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid rgb(199, 199, 199);
+}
+
+#recuadro:focus {
+    border: 2px solid #4a88f465;
+}
+
+#radio {
+    font-family: "OpenSans";
+    font-size: 1.5rem; 
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 30rem;
+    min-height: 10rem;
+}
+
+.enviar {
+    background: #4a88f465;
+    color: white;
+    outline: none;
+    border: 1px solid rgb(199, 199, 199);
+    width: 50%;
+    height: 4rem;
+}
+
+.enviar:hover {
+    background: #4A88F4;
+    cursor: pointer;
+}
+
+.container-entregas {
+    margin: 1rem;
+    width: 70%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    border: 1px solid rgb(199, 199, 199);
+    color: rgb(97, 97, 97);
+}
+
+.entregas {
+    font-family: "OpenSans";
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+iframe {
+    width: 35%;
+    padding: 2rem;
+}
+
+/*responsive web design - entre {%}*/
+@media screen and (max-width: 640px) {
+    .container-header {
+        width: 100%;
+        flex-direction: column;
+    }
+    .menu nav ul {
+        flex-direction: column;
+    }
+    .menu nav ul li {
+        display: block;
+        background: rgb(222, 255, 172);
+        margin: 0;
+    }
+    .container-inicio {
+        width: 100%;
+        height: auto;
+        margin-top: 18rem;
+        padding: 0 1rem;
+    }
+    .container-footer {
+        width: 100%;
+        flex-direction: column;
+    }
+    .redes ul {
+        flex-direction: column;
+    }
+    .icon {
+        display: flex;
+        justify-content: flex-end;
+        align-items:center;
+    }
+    h2 {
+        margin-top: 18rem;
+    }
+    .container-catalogo {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0.5rem;
+    }
+    .container-blog {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0.5rem;
+    }
+    .container-pedidos {
+        width: 95%;
+    }
+    .container-entregas, iframe {
+        width: 95%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 640px){
+    .container-header {
+        width: 100%;
+    }
+    .container-inicio {
+        width: 80%;
+        height: auto;
+        padding: 0 1rem;
+    }
+    .container-footer {
+        width: 100%;
+    }
+    .container-catalogo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0.5rem;
+    }
+    .container-blog {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0.5rem;
+    }
+    .container-pedidos {
+        width: 70%;
+    }
+    .container-entregas, iframe {
+        width: 70%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .container-header {
+        width: 100%;
+    }
+    .container-inicio {
+        width: 80%;
+        height: auto;
+        padding: 0 1rem;
+    }
+    .container-footer {
+        width: 100%;
+    }
+    .container-catalogo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 0.5rem;
+    }
+    .container-blog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0.5rem;
+    }
+    .container-pedidos {
+        width: 70%;
+    }
+    .container-entregas {
+        width: 70%;
+    }
+}
